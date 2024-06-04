@@ -1,0 +1,35 @@
+body{
+    animation: degrade 5s infinite alternate;
+    background: linear-gradient(-45deg, blue, orangered,yellow );
+    background-size: 500% 100%;
+}
+div{
+    margin: 0 30%;
+    text-align: center;
+    font-weight: normal;
+    .td{
+        color: orangered;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 30px;
+    }
+    span{
+        font-weight: bold;
+    }
+    p .td{
+        font-weight: normal;
+        font-style: italic;
+    }
+}
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+    
+}
